@@ -49,7 +49,7 @@ class PageMenu extends React.Component {
               <Link to="/author">Author</Link>
             </Menu.Item>
             <Menu.Item key="setting:2">
-              <Link to="/form">Form</Link>
+              <Link to="/register">Register</Link>
             </Menu.Item>
           </MenuItemGroup>
         </SubMenu>
