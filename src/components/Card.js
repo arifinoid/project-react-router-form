@@ -42,7 +42,7 @@ const contents = [
   }
 ];
 
-export const CardBla = () => {
+export const Cards = () => {
   return (
     <div
       style={{
@@ -73,4 +73,4 @@ export const CardBla = () => {
   );
 };
 
-export default CardBla;
+export default Cards;

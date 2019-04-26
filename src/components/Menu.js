@@ -1,5 +1,6 @@
 import React from "react";
 import { Menu, Icon } from "antd";
+import { Link } from "react-router-dom";
 
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
@@ -24,12 +25,16 @@ class PageMenu extends React.Component {
         mode="horizontal"
       >
         <Menu.Item key="home">
-          <Icon type="home" />
-          Home
+          <Link to="/">
+            <Icon type="home" />
+            Home
+          </Link>
         </Menu.Item>
         <Menu.Item key="app">
-          <Icon type="appstore" />
-          Cards
+          <Link to="/card">
+            <Icon type="appstore" />
+            Cards
+          </Link>
         </Menu.Item>
         <SubMenu
           title={
@@ -40,8 +45,12 @@ class PageMenu extends React.Component {
           }
         >
           <MenuItemGroup title="About">
-            <Menu.Item key="setting:1">Author</Menu.Item>
-            <Menu.Item key="setting:2">This</Menu.Item>
+            <Menu.Item key="setting:1">
+              <Link to="/author">Author</Link>
+            </Menu.Item>
+            <Menu.Item key="setting:2">
+              <Link to="/form">Form</Link>
+            </Menu.Item>
           </MenuItemGroup>
         </SubMenu>
         <Menu.Item key="alipay">
