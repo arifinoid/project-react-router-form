@@ -112,7 +112,7 @@ class RegistrationForm extends React.Component {
       },
       wrapperCol: {
         xs: { span: 24 },
-        sm: { span: 16 }
+        sm: { span: 9 }
       }
     };
     const tailFormItemLayout = {
@@ -143,7 +143,10 @@ class RegistrationForm extends React.Component {
 
     return (
       <React.Fragment>
-        <PageMenu />
+        <div style={{ textAlign: "center" }}>
+          <PageMenu />
+        </div>
+
         <Form {...formItemLayout} onSubmit={this.handleSubmit}>
           <Form.Item label="E-mail">
             {getFieldDecorator("email", {

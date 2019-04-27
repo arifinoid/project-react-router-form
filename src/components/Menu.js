@@ -1,10 +1,6 @@
 import React from "react";
 import { Menu, Icon } from "antd";
 import { Link } from "react-router-dom";
-
-const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
-
 class PageMenu extends React.Component {
   state = {
     current: "mail"
@@ -36,23 +32,18 @@ class PageMenu extends React.Component {
             Cards
           </Link>
         </Menu.Item>
-        <SubMenu
-          title={
-            <span className="submenu-title-wrapper">
-              <Icon type="setting" />
-              About
-            </span>
-          }
-        >
-          <MenuItemGroup title="About">
-            <Menu.Item key="setting:1">
-              <Link to="/author">Author</Link>
-            </Menu.Item>
-            <Menu.Item key="setting:2">
-              <Link to="/register">Register</Link>
-            </Menu.Item>
-          </MenuItemGroup>
-        </SubMenu>
+        <Menu.Item key="register">
+          <Link to="/register">
+            <Icon type="mail" />
+            Register
+          </Link>
+        </Menu.Item>
+        <Menu.Item key="notfound">
+          <Link to="/notfound">
+            <Icon type="warning" />
+            Don't click this
+          </Link>
+        </Menu.Item>
         <Menu.Item key="alipay">
           <a
             href="https://ant.design"

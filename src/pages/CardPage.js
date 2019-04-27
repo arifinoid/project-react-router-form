@@ -6,7 +6,7 @@ import Card from "../components/Card";
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" style={{ textAlign: "center" }}>
         <PageMenu />
         <Card />
       </div>

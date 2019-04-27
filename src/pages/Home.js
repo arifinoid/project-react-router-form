@@ -6,7 +6,7 @@ import WrappedNormalLoginForm from "../components/Login";
 class Home extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" style={{ textAlign: "center" }}>
         <PageMenu />
         <WrappedNormalLoginForm />
       </div>

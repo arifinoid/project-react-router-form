@@ -47,9 +47,10 @@ export const Cards = () => {
     <div
       style={{
         display: "flex",
+        justifyContent: "center",
         margin: "10px auto",
         flexWrap: "wrap",
-        width: "1000px"
+        maxWidth: "1000px"
       }}
     >
       {contents.map(content => (
