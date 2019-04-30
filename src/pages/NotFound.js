@@ -2,7 +2,6 @@ import React from "react";
 import Menu from "../components/Menu";
 
 const PageNotFound = props => {
-  const path = props.location.pathname;
   return (
     <div
       style={{
